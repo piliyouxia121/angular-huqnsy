@@ -10,18 +10,22 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroService } from './hero.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AppRoutingModule }     from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [HeroService, MessageService]
